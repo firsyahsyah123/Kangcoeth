@@ -1,0 +1,31 @@
+// page.js
+document.addEventListener("DOMContentLoaded", function () {
+    document.body.style.fontFamily = "Arial, sans-serif";
+    document.body.style.maxWidth = "800px";
+    document.body.style.margin = "0 auto";
+    document.body.style.padding = "20px";
+
+    const title = document.createElement("h1");
+    title.textContent = "Kangco_Eth Blog";
+    document.body.appendChild(title);
+
+    const intro = document.createElement("p");
+    intro.textContent = "Selamat datang di blog Kangco_Eth. Di sini saya berbagi artikel, gambar, dan informasi seputar dunia blockchain, crypto, dan teknologi web.";
+    document.body.appendChild(intro);
+
+    const article = document.createElement("div");
+    article.innerHTML = `
+        <h2>Apa itu Kangco_Eth?</h2>
+        <p>Kangco_Eth adalah sebuah proyek kreatif berbasis blockchain yang menggabungkan seni digital, komunitas, dan teknologi web3.</p>
+        <img src="https://via.placeholder.com/600x300" alt="Gambar Kangco_Eth" style="max-width:100%;border-radius:10px;margin-top:10px;">
+        <p>Proyek ini bertujuan untuk memberikan nilai dan manfaat bagi komunitas dengan berbagi wawasan, karya seni, dan peluang kolaborasi.</p>
+    `;
+    document.body.appendChild(article);
+
+    const footer = document.createElement("footer");
+    footer.innerHTML = "<p>© 2025 Kangco_Eth. Dibuat dengan ❤️ menggunakan GitHub Pages.</p>";
+    footer.style.marginTop = "40px";
+    footer.style.fontSize = "14px";
+    footer.style.color = "gray";
+    document.body.appendChild(footer);
+});
